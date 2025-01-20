@@ -87,6 +87,7 @@ def run():
 def keep_alive():
     t = Thread(target=run)
     t.start()
-    
-bot.run('MTMyOTM2MTU2MTAwNDgwNjE2NQ.GyF8Xf.4FjJ0naqcHjgl5HpVQsed1cj7z6oV4aT4cLzhU')
+
+DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
+bot.run(DISCORD_TOKEN)
     
